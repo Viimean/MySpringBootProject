@@ -21,38 +21,6 @@ public class EmployeeEntity {
     @Column(name = "EMP_DEP")
     private String department;
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getPos() {
-        return pos;
-    }
-
-    public void setPos(String pos) {
-        this.pos = pos;
-    }
-
-    public String getDepartment() {
-        return department;
-    }
-
-    public void setDepartment(String department) {
-        this.department = department;
-    }
-
     public EmployeeEntity(){
 
     }
@@ -62,5 +30,12 @@ public class EmployeeEntity {
         this.name=name;
         this.pos= pos;
         this.department=department;
+    }
+
+    public void setReqPayload(){
+        this.id= 199;
+        this.name= "ssads";
+        this.pos= "ssasd";
+        this.department= "sadsad";
     }
 }
